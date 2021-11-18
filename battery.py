@@ -15,18 +15,11 @@ if __name__=="__main__":
 		if percent < 10:
 			notification.notify(
 				title="Warning! Low battery info",
-				message="Less than 10 charge, plug in now"
+				message="Less than 10% charge, plug in now"
 			)
 
 		elif percent < 20:
 			notification.notify( 
 				title="Battery info",
-				message="Less than 20 charge, plug in soon"
+				message="Less than 20% charge, plug in soon"
 			)
-
-	# else:
-	# 	notification.notify(
-	# 		title="Charging",
-	# 		message=str(percent)+"% Battery now",
-	# 		timeout=2
-	# 	)
