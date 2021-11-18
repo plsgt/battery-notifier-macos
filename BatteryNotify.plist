@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StartInterval</key>
+	<integer>600</integer>
+	<key>KeepAlive</key>
+	<false/>
+	<key>Label</key>
+	<string>BatteryNotify</string>
+	<key>LowPriorityIO</key>
+	<true/>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/bin/python3</string>
+		<string>/etc/battery.py</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/tmp/BatteryNotify.err</string>
+	<key>StandardOutPath</key>
+	<string>/tmp/BatteryNotify.out</string>
+	<key>ServiceDescription</key>
+	<string>Battery Alert</string>
+</dict>
+</plist>
